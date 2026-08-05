@@ -40081,6 +40081,60 @@
                   "body": "{\n    \"id\": \"/providers/Microsoft.Billing/billingAccounts/f1ededed-c840-aaaa-9dcc-e91f75551bb0:4fb93974-a809-4f13-aaaa-2cafed7ff63d_2018-09-30/billingSubscriptions/a19ec555-1836-aaaa-83bc-82f505d54f68\",\n    \"name\": \"a19ec555-1836-aaaa-83bc-82f505d54f68\",\n    \"properties\": {\n        \"billingProfileId\": \"/providers/Microsoft.Billing/billingAccounts/f1ededed-c840-aaaa-9dcc-e91f75551bb0:4fb93974-a809-4f13-aaaa-2cafed7ff63d_2018-09-30/billingProfiles/4dc7e73e-8af4-433e-afd7-3b8628313cf2\",\n        \"billingProfileDisplayName\": \"TD SYNNEX (Stellr US)\",\n        \"customerId\": \"/providers/Microsoft.Billing/billingAccounts/f1ededed-c840-aaaa-9dcc-e91f75551bb0:4fb93974-a809-4f13-aaaa-2cafed7ff63d_2018-09-30/customers/e09fe7ba-2840-4126-b83e-6f8622172287\",\n        \"customerDisplayName\": \"TD SYNNEX Cloud Engineering\",\n        \"displayName\": \"Production\",\n        \"skuId\": \"0001\",\n        \"skuDescription\": \"Microsoft Azure Plan\",\n        \"subscriptionBillingStatus\": \"Active\",\n        \"subscriptionId\": \"a19ec555-1836-aaaa-83bc-82f505d54f68\"\n    },\n    \"type\": \"Microsoft.Billing/billingAccounts/billingSubscriptions\"\n}"
                 }
               ]
+            },
+            {
+              "name": "Create Subscription ()",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"displayName\": \"TDS Test subscription\",\r\n  \"resellerId\" : \"6851353\",\r\n  \"skuId\": \"0001\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{azureManagementBaseURI}}/providers/Microsoft.Billing/billingAccounts/:billingAccountName/customers/:customerName/providers/Microsoft.Subscription/createSubscription?api-version=2019-10-01-preview",
+                  "host": [
+                    "{{azureManagementBaseURI}}"
+                  ],
+                  "path": [
+                    "providers",
+                    "Microsoft.Billing",
+                    "billingAccounts",
+                    ":billingAccountName",
+                    "customers",
+                    ":customerName",
+                    "providers",
+                    "Microsoft.Subscription",
+                    "createSubscription"
+                  ],
+                  "query": [
+                    {
+                      "key": "api-version",
+                      "value": "2019-10-01-preview",
+                      "description": "The version of the API to use"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "billingAccountName",
+                      "value": "{{partnerCenterBillAcctId}}",
+                      "description": "The PAC billing account number"
+                    },
+                    {
+                      "key": "customerName",
+                      "value": "{{azureManagementCustomerId}}",
+                      "description": "The end user tenant id where the sub is to be added"
+                    }
+                  ]
+                },
+                "description": "Creates a new subscription for CSP."
+              },
+              "response": []
             }
           ]
         },
