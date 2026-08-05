@@ -9,5 +9,5 @@
 | **Path** | `https://apipartnercenter.msapi.tdsynnex.com/{{version}}/customers/{{endUserTenantId}}` |
 | **Doc** | [Get Customer by Tenant Id](https://learn.microsoft.com/en-us/rest/api/partner-center/manage-customer-accounts/get-customer-by-customer-id) |
 | **Upload Package** | Common |
-| **Supported** | Supported for use by resellers and end users |
+| **Supported** | Supported for all users. |
 | **Notes** |  | 
