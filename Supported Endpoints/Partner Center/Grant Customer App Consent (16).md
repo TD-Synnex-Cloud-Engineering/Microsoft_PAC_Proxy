@@ -1,9 +1,9 @@
-# NAME
+# Grant Customer App Consent
 
 |  |  |
 | ----- | ----- |
-| **OID** |  |
-| **Name** | OAP_SOLV_002_ |
+| **OID** | 16 |
+| **Name** | OAP_SOLV_002_grantCustomerAppConsent |
 | **Overview** | . |
 | **Method** | GET |
 | **Path** | `` |
