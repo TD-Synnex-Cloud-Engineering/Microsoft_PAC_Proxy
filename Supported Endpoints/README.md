@@ -13,9 +13,12 @@ For more information contact: Msft-SE-Azure-NA@tdsynnex.com
 
 **IMPORTANT** 
 - PAC Proxy treats the PATH as case sensitive. Using the wrong case will return a "no upstream API" error.
-
+- The supported endpoints are as shown in the Postman collection.  Some Microsoft endpoints support variable scopes, you may not change the URL to a different scope.
+- TD SYNNEX maintains multiple Partner Centers.  A separate credential is required for one Partner Center.
+  
 ---
 ## Partner Center
+Requests made to the TD SYNNEX Partner Center, not an end user tenant.
 
 See: [https://learn.microsoft.com/en-us/partner-center/developer/partner-center-rest-api-reference](https://learn.microsoft.com/en-us/partner-center/developer/partner-center-rest-api-reference)
 
@@ -45,7 +48,7 @@ See: [Use the Microsoft Graph API - Microsoft Graph | Microsoft Learn](https://l
 | Login Format | `https://login.msapi.tdsynnex.com/{{pacTenantId}}/oauth2/token` | `https://login.microsoftonline.com/{{pacTenantId}}/oauth2/token` |
 
 ## Azure Management - End User
-Requests that use an access token generated using the **End User Tenant ID**, not the PAC tenant id.
+Requests that use an access token generated using the **End User Tenant ID**, not the PAC tenant ID.
 
 See: [Azure REST API reference documentation | Microsoft Learn](https://learn.microsoft.com/en-us/rest/api/azure/)
 
@@ -55,7 +58,7 @@ See: [Azure REST API reference documentation | Microsoft Learn](https://learn.mi
  Login Format | `https://login.msapi.tdsynnex.com/{{endUserTenantId}}/oauth2/token` | `https://login.microsoftonline.com/{{endUserTenantId}}/oauth2/token` |
 
 ## Azure Management - PAC
-Requests that use an access token generated using the **PAC Tenant ID**, not the end user tenant id.
+Requests that use an access token generated using the **PAC Tenant ID**, not the end user tenant ID.
 
 See: [Azure REST API reference documentation | Microsoft Learn](https://learn.microsoft.com/en-us/rest/api/azure/)
 
