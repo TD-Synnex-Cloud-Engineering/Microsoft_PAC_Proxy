@@ -11,11 +11,16 @@ For more information contact: Msft-SE-Azure-NA@tdsynnex.com
 - The number in parenthesis after the name is the TD SYNNEX object identifier.  It should be provided anytime asking for information about an endpoint.
 ----
 
-**IMPORTANT** 
+**Additional Information** 
 - PAC Proxy treats the PATH as case sensitive. Using the wrong case will return a "no upstream API" error.
 - The supported endpoints are as shown in the Postman collection.  Some Microsoft endpoints support variable scopes, you may not change the URL to a different scope.
 - TD SYNNEX maintains multiple Partner Centers.  A separate credential is required for one Partner Center.
-  
+---
+**Credentials**
+- Credentials are created by TD SYNNEX.  They are only usable in the PAC Proxy solutions and will not work directly with Microsoft.
+- A credential is only usable with one TD SYNNEX Partner Center. Creating credentials that work with multiple Partner Centers is not possible.
+- A credential provides access to one or more end user tenants.
+- A credential may be restricted to specific subscriptions, methods and endpoints.
 ---
 ## Partner Center
 Requests made to the TD SYNNEX Partner Center, not an end user tenant.
