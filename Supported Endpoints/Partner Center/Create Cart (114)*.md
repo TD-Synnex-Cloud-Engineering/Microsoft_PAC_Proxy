@@ -3,7 +3,7 @@
 |  |  |
 | ----- | ----- |
 | **OID** | 114 |
-| **Name** | OAP_SOLV_002_ |
+| **Name** | OAP_SOLV_002_createDart |
 | **Overview** | Add an order for a customer in a cart. |
 | **Method** | GET |
 | **Path** | `https://apipartnercenter.msapi.tdsynnex.com/v1/customers/{{endUserTenantId}}/carts` |
