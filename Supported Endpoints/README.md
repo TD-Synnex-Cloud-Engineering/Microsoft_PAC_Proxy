@@ -79,9 +79,11 @@ See: [Azure REST API reference documentation | Microsoft Learn](https://learn.mi
 ## AI Solutions and Security Insights (ASPX)
 The Partner API for AI Business Solutions & Security Insights enables partners to integrate their existing CRM systems with Microsoft data, including usage signals, upsell propensity, incentive eligibility, referral opportunities, and other key insights.
 
-See: [Partner REST API rReference for AI Business Solutions &amp; Security Insights](https://learn.microsoft.com/en-us/partner-center/insights/contact-types-api)
+See: [Partner REST API Reference for AI Business Solutions &amp; Security Insights](https://learn.microsoft.com/en-us/partner-center/insights/contact-types-api)
 
 AI Business Solutions & Security Insights Partner Support: PXPartnerSupport@microsoft.com
+
+**IMPORTANT:** Each Partner Center must be setup for ASPX. Carefully read the API reference before attempting to use these endpoints for the first time.
 
 ---
 
