@@ -3,7 +3,7 @@
 |  |  |
 | ----- | ----- |
 | **OID** | 25 |
-| **Name** | OAP_SOLV_002_ |
+| **Name** | OAP_SOLV_002_PC_listAzureEntitlements |
 | **Overview** | Used to get a collection of resources that belong to a subscription. |
 | **Method** | GET |
 | **Path** | `https://apipartnercenter.msapi.tdsynnex.com/v1/customers/{{endUserTenantId}}/subscriptions/{{endUserResourceSubscriptionId}}/azureEntitlements` |
