@@ -35,6 +35,8 @@ See: [https://learn.microsoft.com/en-us/partner-center/developer/partner-center-
 ## Graph - End User
 These Graph requests are made to the Entra ID tenant of the end user. They are used to query end user specific values.
 
+**IMPORTANT:** These endpoints use permissions granted to TD SYNNEX. If the end user customer did not provide sufficient permissions the endpoint will fail. Consider getting a service principal directly from the end user.
+
 See: [Use the Microsoft Graph API - Microsoft Graph | Microsoft Learn](https://learn.microsoft.com/en-us/graph/use-the-api)
 
 | Item | Value | Equivalent Microsoft Host |
@@ -54,6 +56,8 @@ See: [Use the Microsoft Graph API - Microsoft Graph | Microsoft Learn](https://l
 
 ## Azure Management - End User
 Requests that use an access token generated using the **End User Tenant ID**, not the PAC tenant ID.
+
+**IMPORTANT:** These endpoints use AOBO permissions granted to TD SYNNEX. If the end user customer did not provide sufficient permissions the endpoint will fail. Consider getting a service principal directly from the end user.
 
 See: [Azure REST API reference documentation | Microsoft Learn](https://learn.microsoft.com/en-us/rest/api/azure/)
 
