@@ -1,11 +1,11 @@
 ## 3.1. What is the PAC Proxy Solution 
-The PAC Proxy is a TD SYNNEX managed API proxy that sits between the customer or reseller application and Microsoft APIs such as Partner Center, Microsoft Graph, and Azure Management. The purpose is to allow controlled access to data that only an Indirect Provider like TD SYNNEX can utilize, without exposing access to all customers or the full Partner Center environment. 
+The PAC Proxy is a TD SYNNEX managed API proxy that sits between the customer or reseller application and Microsoft APIs such as Partner Center and Azure Management. The purpose is to allow controlled access to data that only an Indirect Provider like TD SYNNEX can utilize, without exposing access to all customers or the full Partner Center environment. 
 
 ## 3.2. Why the Solution Exists   
 In the CSP model, Microsoft exposes critical billing and subscription data only to the Indirect Provider. Partner Center does not support restricting API access by tenant or subscription. Without a proxy, enabling third party or customer tools would require broad access to all customers, which TD SYNNEX does not allow. The PAC Proxy solves this by enforcing strict controls at the API layer.  
 
 ## 3.3. What the Solution Allows 
-&emsp;• Access to selected Partner Center, Microsoft Graph, and Azure Management API requests. 
+&emsp;• Access to selected Partner Center and Azure Management API requests. 
 
 &emsp;• Access limited to specific tenant IDs and subscription IDs approved by TD SYNNEX. 
 
