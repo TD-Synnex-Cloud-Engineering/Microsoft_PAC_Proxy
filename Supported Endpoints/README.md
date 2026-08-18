@@ -32,18 +32,6 @@ See: [https://learn.microsoft.com/en-us/partner-center/developer/partner-center-
 | Base URL | `https://apipartnercenter.msapi.tdsynnex.com` | `https://api.partnercenter.microsoft.com` |
 | Login Format | `https://login.msapi.tdsynnex.com/common/oauth2/token` | `https://login.microsoftonline.com/common/oauth2/token` |
 
-## Graph - End User
-These Graph requests are made to the Entra ID tenant of the end user. They are used to query end user specific values.
-
-**IMPORTANT:** These endpoints use permissions granted to TD SYNNEX. If the end user customer did not provide sufficient permissions the endpoint will fail. Consider getting a service principal directly from the end user.
-
-See: [Use the Microsoft Graph API - Microsoft Graph | Microsoft Learn](https://learn.microsoft.com/en-us/graph/use-the-api)
-
-| Item | Value | Equivalent Microsoft Host |
-| --- | --- | --- |
-| Base URL | `https://graph.msapi.tdsynnex.com` | `https://graph.microsoft.com` |
-| Login Format | `https://login.msapi.tdsynnex.com/{{endUserTenantId}}/oauth2/token` | `https://login.microsoftonline.com/{{endUserTenantId}}/oauth2/token` |
-
 ## Graph - Partner Center
 These Graph requests are made to the Entra ID tenant of the TD SYNNEX Partner Center. They are used by TD SYNNEX internal developers and ISVs creating portals for TD SYNNEX. They are not usable by resellers or end user customers.
 
