@@ -8,6 +8,6 @@
 | **Method** | GET |
 | **Path** | `https://graph.msapi.tdsynnex.com/v1.0/groups` |
 | **Doc** | [List Groups](https://learn.microsoft.com/en-us/graph/api/group-list?view=graph-rest-1.0&tabs=http) |
-| **Upload Package** | Common |
-| **Supported** | Supported for all users. |
+| **Upload Package** |  |
+| **Supported** | Supported for TD SYNNEX internal use only. |
 | **Notes** |  | 
