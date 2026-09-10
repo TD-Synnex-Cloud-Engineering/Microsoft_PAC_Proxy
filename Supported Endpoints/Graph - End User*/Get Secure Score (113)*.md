@@ -8,6 +8,6 @@
 | **Method** | GET |
 | **Path** | `https://graph.msapi.tdsynnex.com/v1.0/security/secureScores/{{secureScoreId}}` |
 | **Doc** | [Get secureScore](https://learn.microsoft.com/en-us/graph/api/securescore-get?view=graph-rest-1.0&tabs=http) |
-| **Upload Package** | Common |
-| **Supported** | Supported for all users. |
+| **Upload Package** |  |
+| **Supported** | Supported for TD SYNNEX internal use only. |
 | **Notes** |  | 
