@@ -8,6 +8,6 @@
 | **Method** | GET |
 | **Path** | `https://graph.msapi.tdsynnex.com/v1.0/users/{{userId}}/appRoleAssignments` |
 | **Doc** | [List Role Assignments](https://learn.microsoft.com/en-us/graph/api/user-list-approleassignments?view=graph-rest-1.0&tabs=http) |
-| **Upload Package** | Common |
-| **Supported** | Support for all users. |
+| **Upload Package** |  |
+| **Supported** | Supported for TD SYNNEX internal use only. |
 | **Notes** |  | 
